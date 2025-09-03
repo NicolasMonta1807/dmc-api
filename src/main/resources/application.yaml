@@ -1,3 +1,14 @@
 spring:
   application:
     name: dmc-api
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: ${MONGO_DATABASE}
+      username: ${MONGO_USER}
+      password: ${MONGO_PASSWORD}
+      authentication-database: ${AUTH_DB}
+  batch:
+    job:
+      enabled: true
