@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.montanez.dmc_api.data.DmcRepository;
-import com.montanez.dmc_api.model.DmcEntry;
+import com.montanez.dmc_api.model.dmc.DmcEntry;
 
 import lombok.RequiredArgsConstructor;
 

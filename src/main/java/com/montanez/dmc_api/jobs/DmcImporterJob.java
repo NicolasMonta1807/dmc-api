@@ -13,8 +13,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
-import com.montanez.dmc_api.model.DmcEntry;
-import com.montanez.dmc_api.model.DmcEntryRaw;
+import com.montanez.dmc_api.model.dmc.DmcEntry;
+import com.montanez.dmc_api.model.dmc.DmcEntryRaw;
 
 @Configuration
 public class DmcImporterJob {

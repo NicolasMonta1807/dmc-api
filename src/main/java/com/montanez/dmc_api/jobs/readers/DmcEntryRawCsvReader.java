@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
 
-import com.montanez.dmc_api.model.DmcEntryRaw;
+import com.montanez.dmc_api.model.dmc.DmcEntryRaw;
 
 @Configuration
 public class DmcEntryRawCsvReader {

@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
-import com.montanez.dmc_api.model.DmcEntry;
+import com.montanez.dmc_api.model.dmc.DmcEntry;
 
 @Configuration
 public class DmcEntryMongoWriter {

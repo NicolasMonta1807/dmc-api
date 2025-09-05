@@ -1,4 +1,4 @@
-package com.montanez.dmc_api.model;
+package com.montanez.dmc_api.model.dmc;
 
 import java.util.ArrayList;
 import java.util.List;

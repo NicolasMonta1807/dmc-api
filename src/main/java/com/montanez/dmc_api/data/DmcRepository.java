@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.montanez.dmc_api.model.DmcEntry;
+import com.montanez.dmc_api.model.dmc.DmcEntry;
 
 public interface DmcRepository extends MongoRepository<DmcEntry, String> {
   List<DmcEntry> findByNumberIgnoreCase(String number);

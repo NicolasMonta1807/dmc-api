@@ -1,4 +1,4 @@
-package com.montanez.dmc_api.model;
+package com.montanez.dmc_api.model.dmc;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

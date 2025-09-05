@@ -8,8 +8,8 @@ import org.springframework.batch.item.ItemProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.montanez.dmc_api.model.DmcEntry;
-import com.montanez.dmc_api.model.DmcEntryRaw;
+import com.montanez.dmc_api.model.dmc.DmcEntry;
+import com.montanez.dmc_api.model.dmc.DmcEntryRaw;
 
 @Configuration
 public class DmcEntryItemProcessor {
