@@ -1,5 +1,6 @@
 package com.montanez.dmc_api.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
@@ -22,5 +23,13 @@ public class DmcEntry {
 
   private String baseName;
   private String variation;
-  private List<String> similars;
+
+  private int red;
+  private int green;
+  private int blue;
+
+  private String hex;
+
+  @Builder.Default
+  private List<String> similars = new ArrayList<>();
 }

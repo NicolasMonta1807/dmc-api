@@ -17,7 +17,7 @@ public class DmcEntryRawCsvReader {
         .name("dmcEntryReader")
         .resource(new FileSystemResource("src/main/resources/dmc-floss.csv"))
         .delimited()
-        .names("number", "name")
+        .names("number", "name", "red", "green", "blue", "hex", "similar")
         .targetType(DmcEntryRaw.class)
         .linesToSkip(1) // Skip header
         .build();
