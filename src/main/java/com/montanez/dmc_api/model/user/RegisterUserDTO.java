@@ -1,13 +1,6 @@
 package com.montanez.dmc_api.model.user;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-import com.montanez.dmc_api.model.inventory.InventoryItem;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -21,11 +14,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Document("user_accounts")
-public class UserAccount {
-
-  @Id
-  private String id;
+public class RegisterUserDTO {
 
   @NotBlank
   @Size(min = 8, max = 30)
@@ -37,8 +26,7 @@ public class UserAccount {
   @Indexed(unique = true)
   private String email;
 
-  private String passwordHash;
-
-  @Builder.Default
-  private List<InventoryItem> inventory = new ArrayList<>();
+  @NotBlank
+  @Size(min = 8)
+  private String password;
 }
